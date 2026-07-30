@@ -1,0 +1,35 @@
+{
+  "repo": "linguatrip",
+  "feeds": [
+    {
+      "source": "https://linguatrip.com/blog/feed/",
+      "feed_url": "https://linguatrip.com/blog/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
+      "source": "https://linguatrip-blog.azurewebsites.net/blog/feed/",
+      "feed_url": "https://linguatrip-blog.azurewebsites.net/blog/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
+      "source": "https://linguatrip.com",
+      "feed_url": "https://linguatrip.com/blog/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    },
+    {
+      "source": "https://blog.linguatrip.com/",
+      "feed_url": "https://linguatrip-blog.azurewebsites.net/blog/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    }
+  ],
+  "post_count": 3,
+  "fetched": "2026-07-25T15:00:33Z"
+}

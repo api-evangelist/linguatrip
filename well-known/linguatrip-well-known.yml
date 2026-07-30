@@ -1,0 +1,61 @@
+generated: '2026-07-19'
+method: searched
+source: live HTTP probes of Linguatrip web hosts
+summary: >-
+  No /.well-known/ resources are published on any Linguatrip host. Every
+  standard path was probed and returned 404 (or 403 on online.linguatrip.com,
+  which blocks unknown paths outright). Recorded so future pipeline runs do
+  not re-probe blindly; absence is the real, expected result for a consumer
+  education and language-travel booking site with no developer program.
+hosts:
+- host: linguatrip.com
+  paths:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /robots.txt
+    status: 200
+    note: present, but not a /.well-known/ resource; allows all crawlers
+  - path: /sitemap.xml
+    status: 200
+    note: sitemap index covering en/ru language, country, city and schools sets
+- host: blog.linguatrip.com
+  paths:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: edu.linguatrip.com
+  paths:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: online.linguatrip.com
+  paths:
+  - path: /.well-known/security.txt
+    status: 403
+  - path: /.well-known/openid-configuration
+    status: 403
+  - path: /.well-known/api-catalog
+    status: 403
+  - path: /llms.txt
+    status: 403
+found: []
