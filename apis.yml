@@ -1,19 +1,47 @@
 aid: linguatrip
 name: Linguatrip
-description: Linguatrip is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Linguatrip is a language-education and language-travel company founded
+  in 2014 and backed by 500 Global. It operates two connected businesses: a booking
+  marketplace for accredited language schools abroad — covering course selection,
+  accommodation, airport transfers and visa support across countries including the
+  United Kingdom, Malta and the United Arab Emirates — and its own online English
+  school offering 25+ self-paced courses, one-to-one tutoring, speaking clubs and
+  exam preparation for IELTS, TOEFL, GMAT, GRE and SAT. It also provides higher-education
+  placement consulting for US, UK and Canadian universities. Linguatrip publishes
+  no public API, developer portal or SDKs; its surfaces are consumer web properties
+  in four languages with pricing in 18 currencies.
 url: https://raw.githubusercontent.com/api-evangelist/linguatrip/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://linguatrip.com/apple-touch-icon.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - 500-global
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Education
+- Language Learning
+- Travel
+- Online Learning
+- Test Preparation
+- Study Abroad
+- Marketplace
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +51,24 @@ maintainers:
 common:
 - type: Website
   url: https://linguatrip.com
+- type: Blog
+  url: https://blog.linguatrip.com/
+- type: BlogRSS
+  url: https://blog.linguatrip.com/feed/
+- type: Support
+  url: https://linguatrip.com/en/home/contacts/
+- type: Login
+  url: https://edu.linguatrip.com/login
+- type: TermsOfService
+  url: https://linguatrip.com/en/home/sitelicense/
+- type: PrivacyPolicy
+  url: https://linguatrip.com/en/home/privacypolicy/
+- type: DomainSecurity
+  url: security/linguatrip-domain-security.yml
+- type: LLMsTxt
+  url: llms/linguatrip-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
